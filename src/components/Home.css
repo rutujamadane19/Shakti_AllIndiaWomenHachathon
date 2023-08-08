@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.header{
+    z-index:1;
+    background: linear-gradient(-45deg,#d6f141,#e2c5a0,#84BCDA,#9055A2);
+    background-size: 400% 400%;
+    width:100%;
+    height:100%;
+    animation:animate 15s ease infinite;
+    
+    
+}
+@keyframes animate{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+#typewriter{
+    font-size:3em;
+    font-weight: bold;
+    letter-spacing:5px;
+    font-family:monospace;
+    border-right:4px solid;
+    width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    animation:typing 2s steps(18),
+    cursor .4s step-end infinite alternate;
+
+}
+
+@keyframes cursor {
+    50%{ background-color: transparent;}
+}
+@keyframes typing {
+    from {width:0}
+}
